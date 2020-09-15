@@ -28,6 +28,29 @@ class StoryView: UIView {
         
         userImageView.layer.masksToBounds = true
         userImageView.layer.cornerRadius = userImageView.frame.width / 2.0
+        
+        setGradient()
+    }
+    
+    func setGradient() {
+        
+        self.imageView.layer.sublayers?.forEach { $0.removeFromSuperlayer() }
+                
+        let width = self.bounds.width
+        let height = self.bounds.height
+        let sHeight:CGFloat = 100.0
+        let shadow = UIColor.black.withAlphaComponent(0.3).cgColor
+
+        // Add gradient bar for image on top
+        let topImageGradient = CAGradientLayer()
+        topImageGradient.frame = CGRect(x: 0, y: 0, width: width, height: sHeight)
+        topImageGradient.colors = [shadow, UIColor.clear.cgColor]
+        imageView.layer.insertSublayer(topImageGradient, at: 0)
+
+        let bottomImageGradient = CAGradientLayer()
+        bottomImageGradient.frame = CGRect(x: 0, y: height - sHeight, width: width, height: sHeight)
+        bottomImageGradient.colors = [UIColor.clear.cgColor, shadow]
+        imageView.layer.insertSublayer(bottomImageGradient, at: 0)
     }
     
     func setImage(url : URL?) {
