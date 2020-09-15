@@ -33,8 +33,8 @@ final class FeedWireframe: BaseWireframe {
 
 extension FeedWireframe: FeedWireframeInterface {
     
-    func openDetail(at indexPath: IndexPath, withStories stories: [Story]) {
-        navigationController?.pushWireframe(PreviewWireframe(indexPath: indexPath, withStories: stories))
+    func openDetail(at indexPath: IndexPath, withStories stories: [Story], previewDelegate: PreviewDelegate) {
+        navigationController?.pushWireframe(PreviewWireframe(indexPath: indexPath, withStories: stories, previewDelegate: previewDelegate))
     }
     
 }

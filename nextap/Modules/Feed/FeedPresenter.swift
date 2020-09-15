@@ -39,7 +39,7 @@ final class FeedPresenter {
 extension FeedPresenter: FeedPresenterInterface {
     
     func didSelectItem(at indexPath: IndexPath) {
-        wireframe.openDetail(at: indexPath, withStories: feedResult.data)
+        wireframe.openDetail(at: indexPath, withStories: feedResult.data, previewDelegate: self)
     }
     
     
@@ -72,4 +72,12 @@ extension FeedPresenter: FeedPresenterInterface {
             print("Failed")
         }
     }
+}
+
+extension FeedPresenter: PreviewDelegate{
+    func setActiveIndexPath(indexPath: IndexPath) {
+        view.scrollToIndex(indexPath: indexPath)
+    }
+    
+    
 }

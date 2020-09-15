@@ -38,6 +38,11 @@ final class FeedViewController: UIViewController {
 // MARK: - Extensions -
 
 extension FeedViewController: FeedViewInterface {
+    
+    func scrollToIndex(indexPath: IndexPath) {
+        collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: false)
+    }
+    
     func reloadData() {
         collectionView.reloadData()
     }

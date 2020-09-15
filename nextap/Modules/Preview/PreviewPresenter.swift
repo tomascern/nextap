@@ -20,6 +20,8 @@ final class PreviewPresenter {
     
     private var indexPath: IndexPath
     private let stories: [Story]
+    
+    var delegate: PreviewDelegate?
 
     // MARK: - Lifecycle -
 
@@ -36,10 +38,15 @@ final class PreviewPresenter {
 // MARK: - Extensions -
 
 extension PreviewPresenter: PreviewPresenterInterface {
+    
+    func previewIndexChanged(to newIndex: Int) {
+        self.indexPath = IndexPath(row: newIndex, section: 0)
+        delegate?.setActiveIndexPath(indexPath: self.indexPath)
+    }
+    
     func getItem(at: Int) -> Story {
         return stories[at]
     }
-    
     
     func dismissButtonTouched() {
         wireframe.dismissButtonTouched(at: indexPath)

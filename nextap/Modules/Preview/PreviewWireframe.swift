@@ -18,13 +18,14 @@ final class PreviewWireframe: BaseWireframe {
 
     // MARK: - Module setup -
 
-    init(indexPath: IndexPath, withStories stories: [Story]) {
+    init(indexPath: IndexPath, withStories stories: [Story], previewDelegate: PreviewDelegate) {
         let moduleViewController = storyboard.instantiateViewController(ofType: PreviewViewController.self)
         super.init(viewController: moduleViewController)
 
         let interactor = PreviewInteractor()
         let presenter = PreviewPresenter(view: moduleViewController, interactor: interactor, wireframe: self, indexPath: indexPath, stories: stories)
         moduleViewController.presenter = presenter
+        presenter.delegate = previewDelegate
     }
 
 }

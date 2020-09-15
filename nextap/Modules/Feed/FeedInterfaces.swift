@@ -12,11 +12,12 @@ import UIKit
 import Alamofire
 
 protocol FeedWireframeInterface: WireframeInterface {
-    func openDetail(at indexPath: IndexPath, withStories stories: [Story])
+    func openDetail(at indexPath: IndexPath, withStories stories: [Story], previewDelegate: PreviewDelegate)
 }
 
 protocol FeedViewInterface: ViewInterface {
     func reloadData()
+    func scrollToIndex(indexPath: IndexPath)
 }
 
 protocol FeedPresenterInterface: PresenterInterface {

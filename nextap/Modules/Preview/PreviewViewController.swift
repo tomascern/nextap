@@ -54,11 +54,6 @@ extension PreviewViewController: OHCubeViewDelegate {
     
     func cubeViewDidEndDecelerating(_ cubeView: OHCubeView) {
         let index = Int(cubeView.contentOffset.x / cubeView.bounds.size.width)
-        print("index: \(index)")
-    }
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let index = Int(scrollView.contentOffset.x / scrollView.bounds.size.width)
-        print("index: \(index)")
+        presenter.previewIndexChanged(to: index)
     }
 }

@@ -23,7 +23,12 @@ protocol PreviewViewInterface: ViewInterface {
 protocol PreviewPresenterInterface: PresenterInterface {
     func dismissButtonTouched()
     func getItem(at: Int) -> Story
+    func previewIndexChanged(to newIndex: Int)
 }
 
 protocol PreviewInteractorInterface: InteractorInterface {
+}
+
+protocol PreviewDelegate{
+    func setActiveIndexPath(indexPath: IndexPath)
 }
