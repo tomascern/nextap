@@ -25,9 +25,11 @@ class StoryView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
+        //set round user imageView
         userImageView.layer.masksToBounds = true
         userImageView.layer.cornerRadius = userImageView.frame.width / 2.0
         
+        //set top and bottom grey->white gradient
         setGradient()
     }
     
@@ -37,17 +39,16 @@ class StoryView: UIView {
                 
         let width = self.bounds.width
         let height = self.bounds.height
-        let sHeight:CGFloat = 100.0
         let shadow = UIColor.black.withAlphaComponent(0.3).cgColor
 
         // Add gradient bar for image on top
         let topImageGradient = CAGradientLayer()
-        topImageGradient.frame = CGRect(x: 0, y: 0, width: width, height: sHeight)
+        topImageGradient.frame = CGRect(x: 0, y: 0, width: width, height: Constants.gradientHeight)
         topImageGradient.colors = [shadow, UIColor.clear.cgColor]
         imageView.layer.insertSublayer(topImageGradient, at: 0)
 
         let bottomImageGradient = CAGradientLayer()
-        bottomImageGradient.frame = CGRect(x: 0, y: height - sHeight, width: width, height: sHeight)
+        bottomImageGradient.frame = CGRect(x: 0, y: height - Constants.gradientHeight, width: width, height: Constants.gradientHeight)
         bottomImageGradient.colors = [UIColor.clear.cgColor, shadow]
         imageView.layer.insertSublayer(bottomImageGradient, at: 0)
     }

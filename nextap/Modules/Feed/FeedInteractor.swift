@@ -19,7 +19,7 @@ final class FeedInteractor {
 extension FeedInteractor: FeedInteractorInterface {
     
     func fetchStories(_ completion: @escaping (DataResponse<FeedResult, AFError>) -> (Void)) {
-        AF.request(API_FEED).validate().responseDecodable(of: FeedResult.self, completionHandler: completion)
+        AF.request(Constants.apiFeed).validate().responseDecodable(of: FeedResult.self, completionHandler: completion)
     }
     
 }

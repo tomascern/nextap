@@ -25,7 +25,7 @@ class StoryViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 10
+        imageView.layer.cornerRadius = Constants.feedImagesRadius
     }
     
     func configure(with story: Story) {

@@ -141,6 +141,7 @@
 		40E6A783250F78690003A576 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				40E6A7B2250F9E930003A576 /* FeedData */,
 				40E6A787250F789E0003A576 /* VIPER */,
 			);
 			path = Common;
@@ -188,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				40E6A7B7250FC7D00003A576 /* StoryCell */,
-				40E6A7B2250F9E930003A576 /* FeedData */,
 				40E6A794250F793E0003A576 /* Feed.storyboard */,
 				40E6A795250F793E0003A576 /* FeedInterfaces.swift */,
 				40E6A796250F793E0003A576 /* FeedPresenter.swift */,
@@ -535,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cerny.tms.nextap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -554,7 +554,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cerny.tms.nextap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

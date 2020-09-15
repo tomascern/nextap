@@ -41,7 +41,6 @@ extension PreviewPresenter: PreviewPresenterInterface {
     
     func previewIndexChanged(to newIndex: Int) {
         self.indexPath = IndexPath(row: newIndex, section: 0)
-        //delegate?.setActiveIndexPath(indexPath: self.indexPath)
     }
     
     func getItem(at: Int) -> Story {

@@ -15,11 +15,6 @@ final class FeedViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     private let reuseIdentifier = "StoryCell"
-    private let sectionInsets = UIEdgeInsets(top: 20.0,
-                                             left: 20.0,
-                                             bottom: 50.0,
-                                             right: 20.0)
-    private let itemsPerRow: CGFloat = 2
     
     // MARK: - Public properties -
 
@@ -71,19 +66,19 @@ extension FeedViewController: UICollectionViewDataSource {
 
 extension FeedViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let paddinSpace = sectionInsets.left * (itemsPerRow + 1)
+        let paddinSpace = Constants.feedImageInsets.left * (Constants.feedImagesPerRow + 1)
         let availableWidth = view.frame.width - paddinSpace
-        let widthPerItem = availableWidth / itemsPerRow
+        let widthPerItem = availableWidth / Constants.feedImagesPerRow
         
         return CGSize(width: widthPerItem, height: widthPerItem / 9 * 16 + 20)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return sectionInsets
+        return Constants.feedImageInsets
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return sectionInsets.left
+        return Constants.feedImageInsets.left
     }
 }
 

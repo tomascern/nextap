@@ -33,8 +33,6 @@ final class PreviewViewController: UIViewController {
         
         presenter.viewDidLayoutSubviews()
     }
-    
-    
 }
 
 // MARK: - Extensions -
