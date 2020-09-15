@@ -3,27 +3,77 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		40E6A76F250F783A0003A576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A76E250F783A0003A576 /* AppDelegate.swift */; };
 		40E6A771250F783A0003A576 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A770250F783A0003A576 /* SceneDelegate.swift */; };
-		40E6A773250F783A0003A576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A772250F783A0003A576 /* ViewController.swift */; };
-		40E6A776250F783A0003A576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E6A774250F783A0003A576 /* Main.storyboard */; };
 		40E6A778250F783C0003A576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E6A777250F783C0003A576 /* Assets.xcassets */; };
 		40E6A77B250F783C0003A576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E6A779250F783C0003A576 /* LaunchScreen.storyboard */; };
+		40E6A78D250F789E0003A576 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A788250F789E0003A576 /* BaseWireframe.swift */; };
+		40E6A78E250F789E0003A576 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A789250F789E0003A576 /* UIStoryboardExtension.swift */; };
+		40E6A78F250F789E0003A576 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A78A250F789E0003A576 /* PresenterInterface.swift */; };
+		40E6A790250F789E0003A576 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A78B250F789E0003A576 /* ViewInterface.swift */; };
+		40E6A791250F789E0003A576 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A78C250F789E0003A576 /* InteractorInterface.swift */; };
+		40E6A793250F79020003A576 /* NextapNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A792250F79020003A576 /* NextapNavigationController.swift */; };
+		40E6A79A250F793E0003A576 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E6A794250F793E0003A576 /* Feed.storyboard */; };
+		40E6A79B250F793E0003A576 /* FeedInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A795250F793E0003A576 /* FeedInterfaces.swift */; };
+		40E6A79C250F793E0003A576 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A796250F793E0003A576 /* FeedPresenter.swift */; };
+		40E6A79D250F793E0003A576 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A797250F793E0003A576 /* FeedViewController.swift */; };
+		40E6A79E250F793E0003A576 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A798250F793E0003A576 /* FeedInteractor.swift */; };
+		40E6A79F250F793E0003A576 /* FeedWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A799250F793E0003A576 /* FeedWireframe.swift */; };
+		40E6A7A8250F79710003A576 /* Preview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E6A7A2250F79710003A576 /* Preview.storyboard */; };
+		40E6A7A9250F79710003A576 /* PreviewInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7A3250F79710003A576 /* PreviewInterfaces.swift */; };
+		40E6A7AA250F79710003A576 /* PreviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7A4250F79710003A576 /* PreviewPresenter.swift */; };
+		40E6A7AB250F79710003A576 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7A5250F79710003A576 /* PreviewViewController.swift */; };
+		40E6A7AC250F79710003A576 /* PreviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7A6250F79710003A576 /* PreviewInteractor.swift */; };
+		40E6A7AD250F79710003A576 /* PreviewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7A7250F79710003A576 /* PreviewWireframe.swift */; };
+		40E6A7AF250F80250003A576 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7AE250F80250003A576 /* AppConstants.swift */; };
+		40E6A7B1250F96DB0003A576 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7B0250F96DB0003A576 /* Story.swift */; };
+		40E6A7B4250F9EC90003A576 /* FeedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7B3250F9EC90003A576 /* FeedResult.swift */; };
+		40E6A7B6250F9FF70003A576 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7B5250F9FF70003A576 /* User.swift */; };
+		40E6A7B9250FC7FF0003A576 /* StoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7B8250FC7FF0003A576 /* StoryViewCell.swift */; };
+		40E6A7BB251022780003A576 /* Story.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E6A7BA251022780003A576 /* Story.xib */; };
+		40E6A7BE251028530003A576 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6A7BD251028530003A576 /* StoryView.swift */; };
+		E3F48C78CC08F5B3496F031D /* Pods_nextap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E32198EE4649105FF452E7 /* Pods_nextap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40E6A76B250F783A0003A576 /* nextap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nextap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E6A76E250F783A0003A576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40E6A770250F783A0003A576 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40E6A772250F783A0003A576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		40E6A775250F783A0003A576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40E6A777250F783C0003A576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40E6A77A250F783C0003A576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40E6A77C250F783C0003A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E6A788250F789E0003A576 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		40E6A789250F789E0003A576 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		40E6A78A250F789E0003A576 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		40E6A78B250F789E0003A576 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		40E6A78C250F789E0003A576 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		40E6A792250F79020003A576 /* NextapNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextapNavigationController.swift; sourceTree = "<group>"; };
+		40E6A794250F793E0003A576 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		40E6A795250F793E0003A576 /* FeedInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInterfaces.swift; sourceTree = "<group>"; };
+		40E6A796250F793E0003A576 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		40E6A797250F793E0003A576 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		40E6A798250F793E0003A576 /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		40E6A799250F793E0003A576 /* FeedWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedWireframe.swift; sourceTree = "<group>"; };
+		40E6A7A2250F79710003A576 /* Preview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preview.storyboard; sourceTree = "<group>"; };
+		40E6A7A3250F79710003A576 /* PreviewInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewInterfaces.swift; sourceTree = "<group>"; };
+		40E6A7A4250F79710003A576 /* PreviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPresenter.swift; sourceTree = "<group>"; };
+		40E6A7A5250F79710003A576 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		40E6A7A6250F79710003A576 /* PreviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewInteractor.swift; sourceTree = "<group>"; };
+		40E6A7A7250F79710003A576 /* PreviewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewWireframe.swift; sourceTree = "<group>"; };
+		40E6A7AE250F80250003A576 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		40E6A7B0250F96DB0003A576 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		40E6A7B3250F9EC90003A576 /* FeedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResult.swift; sourceTree = "<group>"; };
+		40E6A7B5250F9FF70003A576 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		40E6A7B8250FC7FF0003A576 /* StoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewCell.swift; sourceTree = "<group>"; };
+		40E6A7BA251022780003A576 /* Story.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Story.xib; sourceTree = "<group>"; };
+		40E6A7BD251028530003A576 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		63E32198EE4649105FF452E7 /* Pods_nextap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nextap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		921DA2094A3E29AF1E31EB32 /* Pods-nextap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nextap.debug.xcconfig"; path = "Target Support Files/Pods-nextap/Pods-nextap.debug.xcconfig"; sourceTree = "<group>"; };
+		CFB2FFC454CDF19B21571FA6 /* Pods-nextap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nextap.release.xcconfig"; path = "Target Support Files/Pods-nextap/Pods-nextap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +81,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F48C78CC08F5B3496F031D /* Pods_nextap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		297CBF031CBFE1FE65BA5F46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				921DA2094A3E29AF1E31EB32 /* Pods-nextap.debug.xcconfig */,
+				CFB2FFC454CDF19B21571FA6 /* Pods-nextap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		40E6A762250F783A0003A576 = {
 			isa = PBXGroup;
 			children = (
 				40E6A76D250F783A0003A576 /* nextap */,
 				40E6A76C250F783A0003A576 /* Products */,
+				297CBF031CBFE1FE65BA5F46 /* Pods */,
+				E9F92A887F0368B5187F4DFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +118,134 @@
 		40E6A76D250F783A0003A576 /* nextap */ = {
 			isa = PBXGroup;
 			children = (
+				40E6A782250F78470003A576 /* Application */,
+				40E6A783250F78690003A576 /* Common */,
+				40E6A786250F787E0003A576 /* SupportingFiles */,
+				40E6A785250F78770003A576 /* Resources */,
+				40E6A784250F786F0003A576 /* Modules */,
+			);
+			path = nextap;
+			sourceTree = "<group>";
+		};
+		40E6A782250F78470003A576 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				40E6A7AE250F80250003A576 /* AppConstants.swift */,
 				40E6A76E250F783A0003A576 /* AppDelegate.swift */,
 				40E6A770250F783A0003A576 /* SceneDelegate.swift */,
-				40E6A772250F783A0003A576 /* ViewController.swift */,
-				40E6A774250F783A0003A576 /* Main.storyboard */,
+				40E6A792250F79020003A576 /* NextapNavigationController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		40E6A783250F78690003A576 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				40E6A787250F789E0003A576 /* VIPER */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		40E6A784250F786F0003A576 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				40E6A7A1250F79520003A576 /* Preview */,
+				40E6A7A0250F79420003A576 /* Feed */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		40E6A785250F78770003A576 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				40E6A777250F783C0003A576 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		40E6A786250F787E0003A576 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				40E6A779250F783C0003A576 /* LaunchScreen.storyboard */,
 				40E6A77C250F783C0003A576 /* Info.plist */,
 			);
-			path = nextap;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		40E6A787250F789E0003A576 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				40E6A788250F789E0003A576 /* BaseWireframe.swift */,
+				40E6A789250F789E0003A576 /* UIStoryboardExtension.swift */,
+				40E6A78A250F789E0003A576 /* PresenterInterface.swift */,
+				40E6A78B250F789E0003A576 /* ViewInterface.swift */,
+				40E6A78C250F789E0003A576 /* InteractorInterface.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		40E6A7A0250F79420003A576 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				40E6A7B7250FC7D00003A576 /* StoryCell */,
+				40E6A7B2250F9E930003A576 /* FeedData */,
+				40E6A794250F793E0003A576 /* Feed.storyboard */,
+				40E6A795250F793E0003A576 /* FeedInterfaces.swift */,
+				40E6A796250F793E0003A576 /* FeedPresenter.swift */,
+				40E6A797250F793E0003A576 /* FeedViewController.swift */,
+				40E6A798250F793E0003A576 /* FeedInteractor.swift */,
+				40E6A799250F793E0003A576 /* FeedWireframe.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		40E6A7A1250F79520003A576 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				40E6A7BC251028310003A576 /* StoryView */,
+				40E6A7A2250F79710003A576 /* Preview.storyboard */,
+				40E6A7A3250F79710003A576 /* PreviewInterfaces.swift */,
+				40E6A7A4250F79710003A576 /* PreviewPresenter.swift */,
+				40E6A7A5250F79710003A576 /* PreviewViewController.swift */,
+				40E6A7A6250F79710003A576 /* PreviewInteractor.swift */,
+				40E6A7A7250F79710003A576 /* PreviewWireframe.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		40E6A7B2250F9E930003A576 /* FeedData */ = {
+			isa = PBXGroup;
+			children = (
+				40E6A7B3250F9EC90003A576 /* FeedResult.swift */,
+				40E6A7B0250F96DB0003A576 /* Story.swift */,
+				40E6A7B5250F9FF70003A576 /* User.swift */,
+			);
+			path = FeedData;
+			sourceTree = "<group>";
+		};
+		40E6A7B7250FC7D00003A576 /* StoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				40E6A7B8250FC7FF0003A576 /* StoryViewCell.swift */,
+			);
+			path = StoryCell;
+			sourceTree = "<group>";
+		};
+		40E6A7BC251028310003A576 /* StoryView */ = {
+			isa = PBXGroup;
+			children = (
+				40E6A7BA251022780003A576 /* Story.xib */,
+				40E6A7BD251028530003A576 /* StoryView.swift */,
+			);
+			path = StoryView;
+			sourceTree = "<group>";
+		};
+		E9F92A887F0368B5187F4DFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E32198EE4649105FF452E7 /* Pods_nextap.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E6A77F250F783C0003A576 /* Build configuration list for PBXNativeTarget "nextap" */;
 			buildPhases = (
+				2767F6A8B5C1AC83C3D70AEC /* [CP] Check Pods Manifest.lock */,
 				40E6A767250F783A0003A576 /* Sources */,
 				40E6A768250F783A0003A576 /* Frameworks */,
 				40E6A769250F783A0003A576 /* Resources */,
+				1374D13D046EB29AA72F2F18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +310,91 @@
 			files = (
 				40E6A77B250F783C0003A576 /* LaunchScreen.storyboard in Resources */,
 				40E6A778250F783C0003A576 /* Assets.xcassets in Resources */,
-				40E6A776250F783A0003A576 /* Main.storyboard in Resources */,
+				40E6A7BB251022780003A576 /* Story.xib in Resources */,
+				40E6A79A250F793E0003A576 /* Feed.storyboard in Resources */,
+				40E6A7A8250F79710003A576 /* Preview.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1374D13D046EB29AA72F2F18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nextap/Pods-nextap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nextap/Pods-nextap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nextap/Pods-nextap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2767F6A8B5C1AC83C3D70AEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nextap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40E6A767250F783A0003A576 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E6A773250F783A0003A576 /* ViewController.swift in Sources */,
+				40E6A7AF250F80250003A576 /* AppConstants.swift in Sources */,
+				40E6A79C250F793E0003A576 /* FeedPresenter.swift in Sources */,
+				40E6A793250F79020003A576 /* NextapNavigationController.swift in Sources */,
+				40E6A7A9250F79710003A576 /* PreviewInterfaces.swift in Sources */,
+				40E6A7B4250F9EC90003A576 /* FeedResult.swift in Sources */,
+				40E6A7AA250F79710003A576 /* PreviewPresenter.swift in Sources */,
+				40E6A7BE251028530003A576 /* StoryView.swift in Sources */,
+				40E6A79E250F793E0003A576 /* FeedInteractor.swift in Sources */,
+				40E6A79B250F793E0003A576 /* FeedInterfaces.swift in Sources */,
+				40E6A791250F789E0003A576 /* InteractorInterface.swift in Sources */,
+				40E6A7AC250F79710003A576 /* PreviewInteractor.swift in Sources */,
+				40E6A7B9250FC7FF0003A576 /* StoryViewCell.swift in Sources */,
+				40E6A7AB250F79710003A576 /* PreviewViewController.swift in Sources */,
 				40E6A76F250F783A0003A576 /* AppDelegate.swift in Sources */,
+				40E6A78F250F789E0003A576 /* PresenterInterface.swift in Sources */,
+				40E6A78E250F789E0003A576 /* UIStoryboardExtension.swift in Sources */,
+				40E6A79D250F793E0003A576 /* FeedViewController.swift in Sources */,
+				40E6A7AD250F79710003A576 /* PreviewWireframe.swift in Sources */,
+				40E6A790250F789E0003A576 /* ViewInterface.swift in Sources */,
 				40E6A771250F783A0003A576 /* SceneDelegate.swift in Sources */,
+				40E6A7B6250F9FF70003A576 /* User.swift in Sources */,
+				40E6A79F250F793E0003A576 /* FeedWireframe.swift in Sources */,
+				40E6A78D250F789E0003A576 /* BaseWireframe.swift in Sources */,
+				40E6A7B1250F96DB0003A576 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		40E6A774250F783A0003A576 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40E6A775250F783A0003A576 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		40E6A779250F783C0003A576 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +522,7 @@
 		};
 		40E6A780250F783C0003A576 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921DA2094A3E29AF1E31EB32 /* Pods-nextap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +541,7 @@
 		};
 		40E6A781250F783C0003A576 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB2FFC454CDF19B21571FA6 /* Pods-nextap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
