@@ -6,10 +6,10 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
-  - Alamofire
-  - AlamofireImage
+  - Alamofire (= 5.2.2)
+  - AlamofireImage (= 4.1.0)
   - OHCubeView (from `https://github.com/tomascern/ohcubeview.git`)
-  - SVProgressHUD (~> 2.2)
+  - SVProgressHUD (= 2.2.5)
 
 SPEC REPOS:
   trunk:
@@ -32,6 +32,6 @@ SPEC CHECKSUMS:
   OHCubeView: 6c519cfa30bc4dbc20f47032d290cfef5e019b9b
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 8f37c9d439cc53205bd54a8fbf78cd741f97b836
+PODFILE CHECKSUM: f500403cfdabe2039bf2d1c8c5c318f8a860353a
 
 COCOAPODS: 1.9.3
