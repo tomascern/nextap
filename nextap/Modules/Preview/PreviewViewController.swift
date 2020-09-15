@@ -24,7 +24,6 @@ final class PreviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.cubeView.delegate = self
         self.cubeView.cubeDelegate = self
         presenter.viewDidLoad()
     }

@@ -53,24 +53,20 @@ class StoryView: UIView {
         imageView.layer.insertSublayer(bottomImageGradient, at: 0)
     }
     
-    func setImage(url : URL?) {
-        if let url = url {
-            imageView.af.setImage(withURL: url, placeholderImage: #imageLiteral(resourceName: "imagePlaceholder"))
+    func configureWithStory(story: Story) {
+        if let storyImageUrl = URL(string: story.coverSrc) {
+            imageView.af.setImage(withURL: storyImageUrl, placeholderImage: #imageLiteral(resourceName: "imagePlaceholder"))
         } else {
             imageView.image = #imageLiteral(resourceName: "imagePlaceholder")
         }
-    }
-    
-    func setUserImage(url : URL?) {
-       if let url = url {
-            userImageView.af.setImage(withURL: url, placeholderImage: #imageLiteral(resourceName: "imagePlaceholder"))
+        
+        if let userImageUrl = URL(string: story.user.avatarImageUrl) {
+            userImageView.af.setImage(withURL: userImageUrl, placeholderImage: #imageLiteral(resourceName: "imagePlaceholder"))
         } else {
             userImageView.image = #imageLiteral(resourceName: "imagePlaceholder")
         }
-    }
-    
-    func setUserLabel(userName: String) {
-        userLabel.text = userName
+        
+        userLabel.text = story.user.displayName
     }
     
     @IBAction func dismissButtonTouched(_ sender: Any) {

@@ -56,9 +56,7 @@ extension PreviewPresenter: PreviewPresenterInterface {
         
         for story in self.stories {
             let storyView = StoryView.instanceFromNib(presenter: self, frame: view.getFrame())
-            storyView.setImage(url: URL(string: story.coverSrc))
-            storyView.setUserImage(url: URL(string: story.user.avatarImageUrl))
-            storyView.setUserLabel(userName: story.user.displayName)
+            storyView.configureWithStory(story: story)
             
             self.view.addStoryView(view: storyView)
         }
