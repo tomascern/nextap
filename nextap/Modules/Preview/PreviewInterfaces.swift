@@ -15,12 +15,12 @@ protocol PreviewWireframeInterface: WireframeInterface {
 }
 
 protocol PreviewViewInterface: ViewInterface {
-    func getFrame() -> CGRect
     func addStoryView(view : StoryView)
     func scrollToImage(at index: IndexPath)
 }
 
 protocol PreviewPresenterInterface: PresenterInterface {
+    func viewDidLayoutSubviews()
     func dismissButtonTouched()
     func getItem(at: Int) -> Story
     func previewIndexChanged(to newIndex: Int)

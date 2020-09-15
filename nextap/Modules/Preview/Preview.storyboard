@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,20 +12,20 @@
             <objects>
                 <viewController storyboardIdentifier="PreviewViewController" id="zIc-eW-6fX" customClass="PreviewViewController" customModule="nextap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lma-kT-jSQ" customClass="OHCubeView" customModule="OHCubeView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="lma-kT-jSQ" firstAttribute="leading" secondItem="Z2g-4m-atm" secondAttribute="leading" id="3EM-Bl-AOu"/>
-                            <constraint firstAttribute="trailing" secondItem="lma-kT-jSQ" secondAttribute="trailing" id="DfA-We-8Mi"/>
-                            <constraint firstItem="lma-kT-jSQ" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" id="dL3-Xl-GWA"/>
-                            <constraint firstAttribute="bottom" secondItem="lma-kT-jSQ" secondAttribute="bottom" id="kKs-JU-2uG"/>
+                            <constraint firstItem="lma-kT-jSQ" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="3EM-Bl-AOu"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="lma-kT-jSQ" secondAttribute="trailing" id="DfA-We-8Mi"/>
+                            <constraint firstItem="lma-kT-jSQ" firstAttribute="top" secondItem="3pi-N7-nbV" secondAttribute="top" id="dL3-Xl-GWA"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="bottom" secondItem="lma-kT-jSQ" secondAttribute="bottom" id="kKs-JU-2uG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                     </view>

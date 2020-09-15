@@ -16,10 +16,9 @@ class StoryView: UIView {
     
     private unowned var presenter : PreviewPresenter?
     
-    class func instanceFromNib(presenter: PreviewPresenter, frame: CGRect) -> StoryView {
+    class func instanceFromNib(presenter: PreviewPresenter) -> StoryView {
         let view = UINib(nibName: "Story", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! StoryView
         view.presenter = presenter
-        view.frame = frame
         return view
     }
     

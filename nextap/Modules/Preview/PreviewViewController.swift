@@ -28,6 +28,12 @@ final class PreviewViewController: UIViewController {
         presenter.viewDidLoad()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        presenter.viewDidLayoutSubviews()
+    }
+    
     
 }
 
@@ -38,12 +44,7 @@ extension PreviewViewController: PreviewViewInterface {
         self.cubeView.addChildView(view)
     }
     
-    func getFrame() -> CGRect {
-        return self.view.frame
-    }
-    
     func scrollToImage(at index: IndexPath) {
-        self.view.layoutIfNeeded()
         self.cubeView.scrollToViewAtIndex(index.row, animated: false)
     }
     

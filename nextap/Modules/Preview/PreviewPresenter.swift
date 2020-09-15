@@ -56,12 +56,14 @@ extension PreviewPresenter: PreviewPresenterInterface {
     func viewDidLoad() {
         
         for story in self.stories {
-            let storyView = StoryView.instanceFromNib(presenter: self, frame: view.getFrame())
+            let storyView = StoryView.instanceFromNib(presenter: self)
             storyView.configureWithStory(story: story)
             
             self.view.addStoryView(view: storyView)
         }
-        
+    }
+    
+    func viewDidLayoutSubviews() {
         self.view.scrollToImage(at: self.indexPath)
     }
     
