@@ -11,7 +11,7 @@
 import UIKit
 
 protocol PreviewWireframeInterface: WireframeInterface {
-    func dismissButtonTouched(at: IndexPath)
+    func dismissButtonTouched()
 }
 
 protocol PreviewViewInterface: ViewInterface {

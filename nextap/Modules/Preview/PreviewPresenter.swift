@@ -41,7 +41,7 @@ extension PreviewPresenter: PreviewPresenterInterface {
     
     func previewIndexChanged(to newIndex: Int) {
         self.indexPath = IndexPath(row: newIndex, section: 0)
-        delegate?.setActiveIndexPath(indexPath: self.indexPath)
+        //delegate?.setActiveIndexPath(indexPath: self.indexPath)
     }
     
     func getItem(at: Int) -> Story {
@@ -49,7 +49,8 @@ extension PreviewPresenter: PreviewPresenterInterface {
     }
     
     func dismissButtonTouched() {
-        wireframe.dismissButtonTouched(at: indexPath)
+        delegate?.setActiveIndexPath(indexPath: self.indexPath)
+        wireframe.dismissButtonTouched()
     }
     
     func viewDidLoad() {
@@ -61,7 +62,7 @@ extension PreviewPresenter: PreviewPresenterInterface {
             self.view.addStoryView(view: storyView)
         }
         
-        self.view.scrollToImage(at: indexPath)
+        self.view.scrollToImage(at: self.indexPath)
     }
     
 }

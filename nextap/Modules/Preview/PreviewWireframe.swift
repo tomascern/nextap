@@ -33,7 +33,7 @@ final class PreviewWireframe: BaseWireframe {
 // MARK: - Extensions -
 
 extension PreviewWireframe: PreviewWireframeInterface {
-    func dismissButtonTouched(at: IndexPath) {
+    func dismissButtonTouched() {
         navigationController?.popViewController(animated: true)
     }
     

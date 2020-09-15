@@ -48,7 +48,9 @@ extension FeedPresenter: FeedPresenterInterface {
     }
     
     func viewDidLoad() {
+        self.view.showProgressHUD()
         interactor.fetchStories { (response) -> (Void) in
+            self.view.hideProgressHUD()
             self.handleFeedResults(response.result)
         }
     }
